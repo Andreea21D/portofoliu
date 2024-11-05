@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!--custom css-->
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const emailElement = document.getElementById('email');
+            const phoneElement = document.getElementById('phone');
+    
+            emailElement.addEventListener('click', () => {
+                navigator.clipboard.writeText(emailElement.textContent);
+                alert('Adresă de email copiată: ' + emailElement.textContent);
+            });
+    
+            phoneElement.addEventListener('click', () => {
+                navigator.clipboard.writeText(phoneElement.textContent);
+                alert('Număr de telefon copiat: ' + phoneElement.textContent);
+            });
+        });
+    </script>
+    <!--header design-->
+<header class="header">
+    <a href="#" class="logo">Portfolio</a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portofolio</a>
+        <a href="#contact-info">Contact</a>
+    </nav>
+</header>
+
+<!--home section design-->
+<section class="home" id="home">
+    <div class="home-content">
+       <h3>Hello, It's Me</h3> 
+       <h1>Radu Andreea</h1>
+       <h3>And I'm a <span class="multiple-text"></span></h3>
+       <p>Welcome to my digital realm! Explore the digital world of Radu Andreea, where creativity meets innovation, pixels come to life and code tells stories.</p>
+       <div class="social-media">
+        <a href="https://www.facebook.com/virlan.andreea" target="_blank"><i class='bx bxl-facebook'></i></a>
+        <a href="https://twitter.com/Andreea10760496" target="_blank"><i class='bx bxl-twitter'></i></a>
+        <a href="https://www.instagram.com/radu_andreea_denisa/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+        <a href="https://www.linkedin.com/in/andreea-denisa-radu-9303271a2/" target="_blank" ><i class='bx bxl-linkedin' ></i></a>
+       </div>
+        <a href="https://drive.google.com/file/d/1KpC_1B6BMZ-XruX-4ZhklXysDvy0PipD/view?usp=sharing" target="_blank" class="btn">Download CV</a>
+    </div>
+    <div class="home-img">
+        <img src="Pic.png">
+        </div>
+</section>
+<!--about section design-->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="euu1.png" alt="">
+    </div>
+
+    <div class="about-content">
+       <h2 class="heading">About <span>Me</span></h2> 
+       <h3>UI Design & Frontend</h3>
+       <p>I am a graduate of the University of Roehampton in Computing Technologies profile and also I graduated with a master's degree from Northumbria University in Computing and Technology where I gained an understanding of various programming languages.</p>
+       <a href="https://drive.google.com/file/d/1KpC_1B6BMZ-XruX-4ZhklXysDvy0PipD/view?usp=sharing" target="_blank" class="btn">Read More</a>
+    </div>
+
+</section>
+<!--services section design-->
+<section class="services" id="services">
+    <h2 class="heading">My <span>Services</span></h2>
+    <div class="services-container">
+        <div class="services-box">
+            <i class='bx bx-paint' ></i>
+            <h3>UI design</h3>
+            <p>With a keen eye for detail and a passion for aesthetics, I am dedicated to creating captivating and efficient visual experiences for users. I specialize in using Figma to develop interactive prototypes and wireframes that bring ideas to life before the implementation phase.
+            </p>
+            <a href="#" class="btn">See More</a>
+        </div>
+
+        <div class="services-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Frontend</h3>
+            <p>As a frontend developer, I have a passion for creating web interfaces that not only look great but are also extremely functional. I specialize in using HTML, CSS, and JavaScript to develop interactive and appealing solutions that perfectly adapt to the needs of users.
+            </p>
+            <a href="#" class="btn">See More</a>
+        </div>
+
+       
+    </div>
+</section>
+
+<!--portfolio section design-->
+
+<section class="portfolio" id="portfolio">
+   <h2 class="heading">Latest <span>Project</span></h2>
+   <div class="portfolio-container">
+    <div class="portfolio-box">
+        <img src="portfolio1.jpg" alt="">
+        <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, repudiandae.</p>
+            <a href="https://embed.figma.com/design/5PIB3QoguG87OvtC1QTPkz/Untitled?node-id=37-58&embed-host=share"   target="_blank"><i class='bx bx-link-external'></i></a>
+        </div>
+    </div>
+
+    <div class="portfolio-box">
+        <img src="portfolio2.jpg" alt="">
+        <div class="portfolio-layer">
+            <h4></h4>
+            <p>Is a universal supermarket for all type of people and budget</p>
+            <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+    </div>
+    
+    <div class="portfolio-box">
+        <img src="portfolio3.jpg" alt="">
+        <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, repudiandae.</p>
+            <a href="file:///Users/andreea/Desktop/andreea%20website/index.html"><i class='bx bx-link-external'>Grosso Supermarket</i></a>
+        </div>
+    </div>
+
+    <div class="portfolio-box">
+        <img src="portfolio4.jpg" alt="">
+        <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, repudiandae.</p>
+            <a href="http://lavanda.infinityfreeapp.com/index.php"><i target="_blank" class='bx bx-link-external'>Lavender</i></a>
+        </div>
+    </div>
+
+    <div class="portfolio-box">
+        <img src="portfolio5.jpg" alt="">
+        <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, repudiandae.</p>
+            <a href="https://dazzling-panini-b89d06.netlify.app/" target="_blank">Wellness Gym<i class='bx bx-link-external'></i></a>
+        </div>
+    </div>
+
+    <div class="portfolio-box">
+        <img src="portfolio6.jpg" alt="">
+        <div class="portfolio-layer">
+            <h4>Web design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, repudiandae.</p>
+            <a href="https://gracious-booth-86b3e0.netlify.app/" target="_blank">Gaia<i class='bx bx-link-external'></i></a>
+        </div>
+    </div>
+   </div>
+</section>
+<!--contact section design-->
+<div class="contact-info" id="contact-info">
+    <h2>Contact me</h2>
+    <p><strong>EMAIL:</strong> <span class="copyable" id="email">andreeadenisa921@yahoo.com</span></p>
+    <p><strong>TELEFON:</strong> <span class="copyable" id="phone">0773382948</span></p>
+</div>
+<!--footer design-->
+
+<footer class="footer">
+   <div class="footer-text">
+    <p>Copyright &copy; 2024 by Codehal | All Rights Reserved.</p>
+   </div> 
+   <div class="footer-iconTop">
+    <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+   </div>
+</footer>
+<!--scroll reveal-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--typed js-->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<!--custom js-->
+<script src="script.js"></script>
+</body>
+</html>
